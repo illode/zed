@@ -168,8 +168,7 @@ impl Vim {
                         }
                     }
 
-                    Mode::HelixNormal => {}
-                    Mode::Insert | Mode::Normal | Mode::Replace => {
+                    Mode::Insert | Mode::HelixNormal | Mode::Normal | Mode::Replace => {
                         let start = selection.start;
                         let mut end = start;
                         for _ in 0..count {
